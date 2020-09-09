@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-and-run-linux",
+            "type": "shell",
+            "command": "./script/build.sh linux && ./build-linux/bin/pop-lod-demo",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build-html5",
+            "type": "shell",
+            "command": "./script/build.sh html5",
+            "problemMatcher": [],
+            "group": "build"
+        }
+    ]
+}
